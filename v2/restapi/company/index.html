@@ -23963,7 +23963,7 @@ function fixLinks() {
     var href = a.getAttribute('href');
     if (href && !href.startsWith('/huiju-doc/v2/') && !href.startsWith('http') && !href.startsWith('#')) {
       for (var i = 0; i < sections.length; i++) {
-        if (href.startsWith('/' + sections[i] + '/')) { a.setAttribute('href', '/v2' + href); break; }
+        if (href.startsWith('/' + sections[i] + '/')) { a.setAttribute('href', '/huiju-doc/v2' + href); break; }
       }
     }
   });
